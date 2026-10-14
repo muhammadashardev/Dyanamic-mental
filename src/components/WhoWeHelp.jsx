@@ -23,20 +23,8 @@ export default function WhoWeHelp({ onSelectStage, onExploreApproach }) {
 
   return (
     <section className="relative w-full bg-slate-50/70 pt-16 sm:pt-20 pb-24 sm:pb-32 overflow-hidden">
-      {/* Decorative Background Elements */}
-      <div className="absolute top-12 left-10 w-28 h-28 hidden lg:grid grid-cols-6 gap-2 opacity-25 pointer-events-none">
-        {Array.from({ length: 36 }).map((_, i) => (
-          <span key={i} className="w-1.5 h-1.5 rounded-full bg-blue-600 inline-block" />
-        ))}
-      </div>
-      
-      {/* Ambient Floating Icons */}
-      <div className="absolute top-28 left-8 sm:left-24 w-12 h-12 rounded-full bg-white/90 backdrop-blur-md shadow-md border border-white flex items-center justify-center text-blue-500 animate-float-slow hidden sm:flex">
-        <Heart className="w-5 h-5 fill-blue-500/20" />
-      </div>
-      <div className="absolute top-20 right-8 sm:right-28 w-12 h-12 rounded-full bg-white/90 backdrop-blur-md shadow-md border border-white flex items-center justify-center text-indigo-500 animate-float-delayed hidden sm:flex">
-        <Flower2 className="w-5 h-5" />
-      </div>
+     
+     
 
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}

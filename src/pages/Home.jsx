@@ -6,7 +6,12 @@ import ConditionModal from '../components/ConditionModal'
 import AboutSection from '../components/AboutSection'
 import OurServices from '../components/OurServices'
 import OurApproach from '../components/OurApproach'
+import WhyChooseUs from '../components/WhyChooseUs'
+import GettingStarted from '../components/GettingStarted'
+import Testimonials from '../components/Testimonials'
+import FAQSection from '../components/FAQSection'
 import WhoWeHelp from '../components/WhoWeHelp'
+import Footer from '../components/Footer'
 
 export default function Home() {
   const [isAppointmentOpen, setIsAppointmentOpen] = useState(false)
@@ -45,11 +50,29 @@ export default function Home() {
         <OurApproach
           onLearnMore={() => handleOpenAppointment('Care Approach Consultation')}
         />
+        <WhyChooseUs
+          onMeetTeam={() => handleOpenAppointment('Clinical Team Consultation')}
+        />
+        <GettingStarted
+          onRequestAppointment={() => handleOpenAppointment('First Consultation')}
+        />
+        <Testimonials
+          onReadMore={() => handleOpenAppointment('Patient Review Consultation')}
+        />
+        <FAQSection
+          onContactSupport={() => handleOpenAppointment('General Inquiry')}
+        />
         <WhoWeHelp
           onSelectStage={(stage) => handleOpenAppointment(stage.title)}
           onExploreApproach={() => handleOpenAppointment('Care Approach Consultation')}
         />
       </main>
+
+      {/* Footer Section */}
+      <Footer
+        onNavigateSection={() => handleOpenAppointment('General Consultation')}
+        onOpenPortal={() => handleOpenAppointment('Patient Portal Access')}
+      />
 
       {/* Interactive Appointment Consultation Modal */}
       <AppointmentModal
