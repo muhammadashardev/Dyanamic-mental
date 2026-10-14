@@ -6,19 +6,8 @@ import { servicesList } from '../data/servicesData'
 export default function OurServices({ onSelectService, onViewAll }) {
   return (
     <section className="relative w-full bg-slate-50/50 pt-16 sm:pt-20 pb-24 sm:pb-32 overflow-hidden">
-      {/* Decorative dot grid & ambient badges */}
-      <div className="absolute top-12 left-8 w-24 h-24 hidden lg:grid grid-cols-5 gap-2 opacity-25 pointer-events-none">
-        {Array.from({ length: 25 }).map((_, i) => (
-          <span key={i} className="w-1.5 h-1.5 rounded-full bg-blue-600 inline-block" />
-        ))}
-      </div>
-
-      <div className="absolute top-28 left-16 sm:left-28 w-11 h-11 rounded-full bg-white/90 backdrop-blur-md shadow-md border border-white flex items-center justify-center text-blue-500 animate-float-slow hidden sm:flex">
-        <Flower2 className="w-5 h-5" />
-      </div>
-      <div className="absolute top-20 right-12 sm:right-28 w-11 h-11 rounded-full bg-white/90 backdrop-blur-md shadow-md border border-white flex items-center justify-center text-rose-400 animate-float-delayed hidden sm:flex">
-        <Heart className="w-5 h-5 fill-rose-400/20" />
-      </div>
+   
+      
 
       {/* Main Content Area */}
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
