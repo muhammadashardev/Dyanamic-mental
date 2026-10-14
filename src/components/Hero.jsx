@@ -18,7 +18,7 @@ export default function Hero({ onOpenAppointment, onSelectCondition }) {
       <div className="absolute inset-0 bg-radial-at-tl from-white/80 via-transparent to-transparent pointer-events-none" />
 
       {/* Main Content Area */}
-      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full pt-10 sm:pt-14 lg:pt-16 pb-24 sm:pb-32 flex-1 flex items-center">
+      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full pt-24 sm:pt-32 lg:pt-28 pb-20 sm:pb-32 flex-1 flex items-center">
         <div className="w-full grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-8 items-center">
           
           {/* Left Hero Column */}
@@ -29,13 +29,13 @@ export default function Hero({ onOpenAppointment, onSelectCondition }) {
             className="lg:col-span-7 flex flex-col items-start max-w-2xl"
           >
             {/* Top Pill Badge */}
-            <div className="inline-flex items-center gap-2.5 px-4 py-1.5 rounded-full bg-[#dbebfb]/90 border border-[#bcdbf7] backdrop-blur-md text-[#1d4f91] text-[11px] sm:text-xs font-bold tracking-wider uppercase mb-5 sm:mb-6 shadow-sm">
-              <Brain className="w-4 h-4 text-blue-600 stroke-[2.2]" />
+            <div className="inline-flex items-center gap-2.5 px-3.5 sm:px-4 py-1.5 rounded-full bg-[#dbebfb]/90 border border-[#bcdbf7] backdrop-blur-md text-[#1d4f91] text-[10px] sm:text-xs font-bold tracking-wider uppercase mb-4 sm:mb-6 shadow-sm">
+              <Brain className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-blue-600 stroke-[2.2]" />
               <span>Personalized Psychiatric Care</span>
             </div>
 
             {/* Main Headline */}
-            <h1 className="font-serif text-[42px] sm:text-5xl md:text-6xl lg:text-[66px] leading-[1.08] tracking-tight font-semibold text-[#0a1e3b] mb-6">
+            <h1 className="font-serif text-[34px] sm:text-5xl md:text-6xl lg:text-[66px] leading-[1.1] tracking-tight font-semibold text-[#0a1e3b] mb-4 sm:mb-6">
               Finally Feel Like{' '}
               <span className="block mt-1 bg-gradient-to-r from-blue-600 via-indigo-600 to-purple-600 bg-clip-text text-transparent">
                 Yourself Again

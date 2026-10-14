@@ -116,8 +116,6 @@ export default function AboutSection({ onExploreMore }) {
 
               {/* Floating Badge 1: Top Left */}
               <motion.div
-                animate={{ y: [0, -6, 0] }}
-                transition={{ duration: 4, repeat: Infinity, ease: 'easeInOut' }}
                 className="absolute -top-5 -left-4 sm:-left-8 z-20 bg-white/95 backdrop-blur-md rounded-2xl p-3.5 sm:p-4 shadow-[0_12px_28px_rgba(15,35,70,0.12)] border border-white/80 max-w-[130px] sm:max-w-[140px] text-center"
               >
                 <div className="w-8 h-8 mx-auto rounded-full bg-blue-50 text-blue-600 flex items-center justify-center mb-1.5 shadow-sm">
@@ -130,8 +128,6 @@ export default function AboutSection({ onExploreMore }) {
 
               {/* Floating Badge 2: Bottom Right */}
               <motion.div
-                animate={{ y: [0, 6, 0] }}
-                transition={{ duration: 5, repeat: Infinity, ease: 'easeInOut', delay: 1 }}
                 className="absolute -bottom-4 -right-2 sm:-right-6 z-20 flex items-center gap-3 bg-white/95 backdrop-blur-md rounded-2xl px-4 py-3 shadow-[0_12px_30px_rgba(15,35,70,0.14)] border border-white/90"
               >
                 <div className="w-8 h-8 rounded-full bg-indigo-50 text-indigo-600 flex items-center justify-center shadow-sm">
